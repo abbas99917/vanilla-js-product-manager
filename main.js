@@ -21,6 +21,7 @@ form.addEventListener("submit", (e) => {
     let descInput = description.value;
 
     let productOBJECT = {
+        id: Date.now(),
         image: imageInput,
         name: nameInput,
         price: priceInput,
@@ -74,6 +75,12 @@ const displayProducts = (products = productArray) => {
             </div>
 
             <button>Add to Cart</button>
+            <button class="delete-btn" data-id="${item.id}">
+             Delete
+            </button>
+            <button class="delete-btn" data-id="${item.id}">
+             Edit
+            </button>
         `;
 
         // Card ko container mein add karo
@@ -82,7 +89,15 @@ const displayProducts = (products = productArray) => {
 };
 
 
-// Page load hote hi products display karo
+// delete concept
+
+
+
+
+
+
+
+
 displayProducts();
 
 
