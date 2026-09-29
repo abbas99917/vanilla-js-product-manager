@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Product</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="form-container">
+
+    <h2>Add New Product</h2>
+
+    <form class="form">
+
+      <div class="form-group">
+        <label for="imageUrl">Image URL</label>
+        <input type="url" id="imageUrl" placeholder="Enter product image URL">
+      </div>
+
+      <div class="form-group">
+        <label for="productName">Product Name</label>
+        <input type="text" id="productName" placeholder="Enter product name">
+      </div>
+
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input type="number" id="price" placeholder="Enter product price">
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" rows="5" placeholder="Enter product description"></textarea>
+      </div>
+
+      <button type="submit">Add Product</button>
+
+    </form>
+    <input class="search" type="search" id="searchprodut" placeholder="Search products..."
+>
+  </div>
+
+
+  <!-- products-container -->
+  <section class="product-wrapper" id="carts"></section>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+
