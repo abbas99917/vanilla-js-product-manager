@@ -20,6 +20,11 @@ form.addEventListener("submit", (e) => {
     let priceInput = price.value;
     let descInput = description.value;
 
+    if(imageInput === ""|| nameInput === "" || priceInput === "" || descInput === ""){
+        alert("Please Filled The Field First")
+        return;
+    }
+
     let productOBJECT = {
         id: Date.now(),
         image: imageInput,
